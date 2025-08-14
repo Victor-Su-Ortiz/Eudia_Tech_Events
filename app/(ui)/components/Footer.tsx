@@ -3,28 +3,30 @@ import { Sparkles, Github, Twitter, Linkedin, Mail, ExternalLink } from 'lucide-
 
 export function Footer() {
   return (
-    <footer className="mt-auto border-t bg-muted/30">
-      <div className="container py-12 md:py-16">
+    <footer className="mt-auto border-t border-gray-200 bg-eudia-bg-section">
+      <div className="container px-12 py-12 md:py-16">
         <div className="grid gap-8 md:grid-cols-4">
           {/* Eudia Branding */}
           <div className="col-span-2">
             <div className="mb-4 flex items-center gap-3">
-              <div className="relative flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-primary via-primary/80 to-primary/60 shadow-lg">
+              <div className="relative flex h-10 w-10 items-center justify-center rounded-lg bg-eudia-primary shadow-eudia">
                 <Sparkles className="h-6 w-6 text-white" />
-                <div className="absolute inset-0 rounded-lg bg-white/20" />
+                <div className="absolute inset-0 rounded-lg bg-white/10" />
               </div>
               <div>
-                <h3 className="text-lg font-bold">Bay Area Tech Events</h3>
-                <p className="text-xs text-muted-foreground">by Eudia</p>
+                <h3 className="font-euclid text-lg font-bold text-eudia-text">
+                  Bay Area Tech Events
+                </h3>
+                <p className="text-xs text-eudia-text-muted">by Eudia</p>
               </div>
             </div>
 
-            <p className="mb-4 text-sm leading-relaxed text-muted-foreground">
-              Curated by <span className="font-semibold text-foreground">Eudia</span>, this platform
+            <p className="mb-4 font-public text-sm leading-relaxed text-eudia-text-muted">
+              Curated by <span className="font-semibold text-eudia-text">Eudia</span>, this platform
               showcases the most exciting tech events happening around the Bay Area. Built with our
-              core principles of <span className="font-medium">efficiency</span>,
-              <span className="font-medium"> clarity</span>, and
-              <span className="font-medium"> trust</span>.
+              core principles of <span className="font-medium">innovation</span>,
+              <span className="font-medium"> intelligence</span>, and
+              <span className="font-medium"> impact</span>.
             </p>
 
             <div className="flex items-center gap-4">
@@ -32,7 +34,7 @@ export function Footer() {
                 href="https://eudia.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-lg bg-primary px-3 py-1.5 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+                className="inline-flex items-center gap-2 rounded-button bg-eudia-primary px-6 py-2 font-euclid text-sm font-bold text-white transition-colors hover:bg-eudia-primary-dark"
               >
                 Visit Eudia.com
                 <ExternalLink className="h-3 w-3" />
@@ -42,12 +44,12 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="mb-4 text-sm font-semibold">Quick Links</h4>
+            <h4 className="mb-4 font-euclid text-sm font-semibold text-eudia-text">Quick Links</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
                   href="/"
-                  className="text-muted-foreground transition-colors hover:text-primary"
+                  className="font-public text-eudia-text-muted transition-colors hover:text-eudia-primary"
                 >
                   All Events
                 </Link>
@@ -55,7 +57,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/tags/AI"
-                  className="text-muted-foreground transition-colors hover:text-primary"
+                  className="font-public text-eudia-text-muted transition-colors hover:text-eudia-primary"
                 >
                   AI & Machine Learning
                 </Link>
@@ -63,7 +65,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/tags/Robotics"
-                  className="text-muted-foreground transition-colors hover:text-primary"
+                  className="font-public text-eudia-text-muted transition-colors hover:text-eudia-primary"
                 >
                   Robotics
                 </Link>
@@ -71,7 +73,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/tags/BioTech"
-                  className="text-muted-foreground transition-colors hover:text-primary"
+                  className="font-public text-eudia-text-muted transition-colors hover:text-eudia-primary"
                 >
                   BioTech
                 </Link>
@@ -79,7 +81,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/platform/luma"
-                  className="text-muted-foreground transition-colors hover:text-primary"
+                  className="font-public text-eudia-text-muted transition-colors hover:text-eudia-primary"
                 >
                   Browse by Platform
                 </Link>
@@ -89,14 +91,16 @@ export function Footer() {
 
           {/* Eudia Resources */}
           <div>
-            <h4 className="mb-4 text-sm font-semibold">Eudia Resources</h4>
+            <h4 className="mb-4 font-euclid text-sm font-semibold text-eudia-text">
+              Eudia Resources
+            </h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <a
                   href="https://eudia.com/about"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-muted-foreground transition-colors hover:text-primary"
+                  className="font-public text-eudia-text-muted transition-colors hover:text-eudia-primary"
                 >
                   About Eudia
                 </a>
@@ -106,7 +110,7 @@ export function Footer() {
                   href="https://eudia.com/products"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-muted-foreground transition-colors hover:text-primary"
+                  className="font-public text-eudia-text-muted transition-colors hover:text-eudia-primary"
                 >
                   Our Products
                 </a>
@@ -116,7 +120,7 @@ export function Footer() {
                   href="https://eudia.com/blog"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-muted-foreground transition-colors hover:text-primary"
+                  className="font-public text-eudia-text-muted transition-colors hover:text-eudia-primary"
                 >
                   Blog
                 </a>
@@ -126,7 +130,7 @@ export function Footer() {
                   href="https://eudia.com/contact"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-muted-foreground transition-colors hover:text-primary"
+                  className="font-public text-eudia-text-muted transition-colors hover:text-eudia-primary"
                 >
                   Contact Us
                 </a>
@@ -139,12 +143,12 @@ export function Footer() {
         <div className="mt-8 border-t pt-8">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div className="flex flex-col gap-2">
-              <p className="text-sm text-muted-foreground">
-                © {new Date().getFullYear()} <span className="font-semibold">Eudia</span>. All
-                rights reserved.
+              <p className="font-public text-sm text-eudia-text-muted">
+                © {new Date().getFullYear()}{' '}
+                <span className="font-semibold text-eudia-text">Eudia</span>. All rights reserved.
               </p>
-              <p className="text-xs text-muted-foreground">
-                Built with human-centered design principles for the tech community.
+              <p className="font-public text-xs text-eudia-text-muted">
+                AI-powered legal solutions for modern teams.
               </p>
             </div>
 

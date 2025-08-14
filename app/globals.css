@@ -3,18 +3,21 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap');
 
 @layer base {
   :root {
-    /* Eudia Brand Colors */
-    --brand: 221 83% 53%;
-    --brand-light: 217 91% 60%;
-    --brand-dark: 224 76% 48%;
+    /* Eudia Brand Colors from Main Website */
+    --brand: 207 73% 50%; /* #1675d1 */
+    --brand-light: 185 49% 87%; /* #dffbfc */
+    --brand-dark: 194 28% 31%; /* #516c8e */
+    --brand-secondary: 17 74% 51%; /* #e5551b */
+    --brand-tertiary: 8 100% 66%; /* #ff8462 */
     --brand-foreground: 0 0% 100%;
 
     /* Light Mode */
     --background: 0 0% 100%;
-    --foreground: 222 47% 11%;
+    --foreground: 195 41% 18%; /* #163340 */
 
     --card: 0 0% 100%;
     --card-foreground: 222 47% 11%;
@@ -22,40 +25,44 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222 47% 11%;
 
-    --primary: 221 83% 53%;
+    --primary: 207 73% 50%; /* #1675d1 */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222 47% 11%;
+    --secondary: 17 74% 51%; /* #e5551b */
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 185 49% 95%; /* #ecf7fa */
+    --muted-foreground: 225 23% 60%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222 47% 11%;
+    --accent: 185 49% 87%; /* #dffbfc */
+    --accent-foreground: 195 41% 18%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 221 83% 53%;
+    --ring: 207 73% 50%; /* #1675d1 */
 
     --radius: 0.5rem;
 
     /* Accent Colors for Categories */
+    --accent-teal: 176 60% 40%; /* #1ea5b7 */
+    --accent-mint: 174 54% 70%; /* #99e9e6 */
+    --accent-coral: 12 100% 75%; /* #ff8462 */
     --accent-purple: 271 81% 56%;
     --accent-green: 142 71% 45%;
-    --accent-orange: 25 95% 53%;
-    --accent-pink: 330 81% 60%;
+    --accent-orange: 17 74% 51%; /* #e5551b */
   }
 
   .dark {
     /* Dark Mode */
-    --brand: 217 91% 60%;
-    --brand-light: 213 94% 68%;
-    --brand-dark: 221 83% 53%;
-    --brand-foreground: 222 47% 11%;
+    --brand: 207 73% 55%; /* Slightly lighter #1675d1 */
+    --brand-light: 185 49% 90%;
+    --brand-dark: 194 28% 25%;
+    --brand-secondary: 17 74% 55%;
+    --brand-tertiary: 8 100% 70%;
+    --brand-foreground: 0 0% 100%;
 
     --background: 222 47% 11%;
     --foreground: 210 40% 98%;
@@ -66,11 +73,11 @@
     --popover: 222 47% 13%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 217 91% 60%;
-    --primary-foreground: 222 47% 11%;
+    --primary: 207 73% 55%; /* #1675d1 lighter */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 217 33% 17%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 17 74% 55%; /* #e5551b lighter */
+    --secondary-foreground: 0 0% 100%;
 
     --muted: 217 33% 17%;
     --muted-foreground: 215 20.2% 65.1%;
@@ -83,7 +90,7 @@
 
     --border: 217 33% 17%;
     --input: 217 33% 17%;
-    --ring: 217 91% 60%;
+    --ring: 207 73% 55%; /* #1675d1 */
   }
 }
 
@@ -95,6 +102,7 @@
   body {
     @apply bg-background text-foreground;
     font-family:
+      'Euclid Square',
       'Inter',
       system-ui,
       -apple-system,
@@ -104,14 +112,15 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-  /* Typography improvements for clarity */
+  /* Typography improvements for clarity - Eudia style */
   h1,
   h2,
   h3,
   h4,
   h5,
   h6 {
-    @apply font-semibold tracking-tight;
+    @apply font-bold tracking-tight;
+    font-family: 'Euclid Square', 'Inter', sans-serif;
   }
 
   p {
@@ -122,17 +131,53 @@
 @layer components {
   /* Eudia Brand Button Style */
   .btn-eudia {
-    @apply hover:bg-brand-dark inline-flex items-center justify-center rounded-lg bg-brand px-4 py-2.5 text-sm font-medium text-brand-foreground transition-all focus:outline-none focus:ring-2 focus:ring-brand focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-50;
+    @apply inline-flex items-center justify-center rounded-[30px] bg-[#1675d1] px-[25px] py-3 text-[15.44px] font-bold text-white transition-all hover:bg-[#1261b8] focus:outline-none focus:ring-2 focus:ring-[#1675d1] focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-50;
+    font-family: 'Euclid Square', sans-serif;
+  }
+
+  /* Eudia Secondary Button Style (Orange CTA) */
+  .btn-eudia-secondary {
+    @apply inline-flex items-center justify-center rounded-[30px] bg-[#e5551b] px-[25px] py-3 text-[15.44px] font-bold text-white transition-all hover:bg-[#d14411] focus:outline-none focus:ring-2 focus:ring-[#e5551b] focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-50;
+    font-family: 'Euclid Square', sans-serif;
+  }
+
+  /* Eudia Light Button Style */
+  .btn-eudia-light {
+    @apply inline-flex items-center justify-center rounded-[30px] border border-[#163340]/20 bg-[#ecf7fa] px-[25px] py-3 text-[15.44px] font-bold text-[#163340] transition-all hover:bg-[#dffbfc] focus:outline-none focus:ring-2 focus:ring-[#1675d1] focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-50;
+    font-family: 'Euclid Square', sans-serif;
+  }
+
+  /* Eudia Outline Button Style */
+  .btn-eudia-outline {
+    @apply inline-flex items-center justify-center rounded-[30px] border border-[#163340] bg-transparent px-[25px] py-3 text-[20px] font-bold text-[#163340] transition-all hover:bg-[#163340] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#163340] focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-50;
+    font-family: 'Euclid Square', sans-serif;
   }
 
   /* Eudia Card Style */
   .card-eudia {
-    @apply rounded-lg border bg-card p-6 shadow-sm transition-all hover:shadow-md;
+    @apply rounded-2xl bg-white p-[30px] text-[#163340] shadow-sm transition-all hover:shadow-md;
+    background: #ffffff;
+    color: #163340;
+  }
+
+  /* Eudia Card with Background Color */
+  .card-eudia-accent {
+    @apply rounded-2xl p-[30px] text-[#163340] shadow-sm transition-all hover:shadow-md;
+    background: #ecf7fa;
+    color: #163340;
+  }
+
+  /* Eudia Card with Light Orange Background */
+  .card-eudia-warm {
+    @apply rounded-2xl p-[30px] text-[#163340] shadow-sm transition-all hover:shadow-md;
+    background: #fff5e7;
+    color: #163340;
   }
 
   /* Eudia Badge Style */
   .badge-eudia {
-    @apply inline-flex items-center rounded-md px-2.5 py-0.5 text-xs font-medium;
+    @apply inline-flex items-center rounded-lg px-3 py-1.5 text-sm font-medium;
+    font-family: 'Euclid Square', sans-serif;
   }
 }
 
@@ -189,15 +234,20 @@ html {
 
 /* Gradient text for branding */
 .gradient-eudia {
-  background: linear-gradient(
-    to right,
-    hsl(var(--brand)),
-    hsl(var(--brand-light)),
-    hsl(var(--brand-dark))
-  );
+  background: linear-gradient(135deg, #1675d1, #1ea5b7, #33d1c5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+/* Gradient background for sections */
+.gradient-bg-eudia {
+  background: linear-gradient(180deg, #1675d1 0%, #1261b8 100%);
+}
+
+/* Light gradient background */
+.gradient-bg-light {
+  background: linear-gradient(180deg, #ecf7fa 0%, #ffffff 100%);
 }
 
 /* Hover effects */

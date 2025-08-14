@@ -22,11 +22,11 @@ export function Header() {
       className={cn(
         'sticky top-0 z-40 w-full transition-all duration-300',
         scrolled
-          ? 'border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60'
-          : 'border-b bg-background'
+          ? 'border-b border-gray-200 bg-white/95 shadow-eudia backdrop-blur'
+          : 'border-b border-gray-200 bg-white'
       )}
     >
-      <div className="container flex h-16 items-center justify-between">
+      <div className="container flex h-16 items-center justify-between px-12">
         <Link href="/" className="flex items-center gap-3">
           {/* Option 1: Use Eudia PNG logo when available */}
           {/* Uncomment this when you add eudia-logo.png to public/images/ */}
@@ -40,48 +40,53 @@ export function Header() {
           /> */}
 
           {/* Option 2: Current gradient icon (remove when using PNG) */}
-          <div className="relative flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-primary via-primary/80 to-primary/60 shadow-lg">
+          <div className="relative flex h-10 w-10 items-center justify-center rounded-lg bg-eudia-primary shadow-lg">
             <Sparkles className="h-6 w-6 text-white" />
-            <div className="absolute inset-0 rounded-lg bg-white/20" />
+            <div className="absolute inset-0 rounded-lg bg-white/10" />
           </div>
 
           <div className="flex flex-col">
-            <span className="text-xl font-bold tracking-tight">Bay Area Tech Events</span>
-            <span className="text-xs text-muted-foreground">
-              Powered by <span className="font-semibold text-primary">Eudia</span> • Efficiency.
-              Clarity. Trust.
+            <span className="font-euclid text-xl font-bold tracking-tight text-eudia-text">
+              Bay Area Tech Events
+            </span>
+            <span className="text-xs text-eudia-text-muted">
+              Powered by <span className="font-semibold text-eudia-primary">Eudia</span> •
+              Innovation. Intelligence. Impact.
             </span>
           </div>
         </Link>
 
         <nav className="flex items-center gap-6">
-          <Link href="/" className="text-sm font-medium transition-colors hover:text-primary">
+          <Link
+            href="/"
+            className="font-euclid text-[15px] font-medium text-eudia-text transition-colors hover:text-eudia-primary"
+          >
             Events
           </Link>
           <Link
             href="/tags/AI"
-            className="text-sm font-medium transition-colors hover:text-primary"
+            className="font-euclid text-[15px] font-medium text-eudia-text transition-colors hover:text-eudia-primary"
           >
             AI & ML
           </Link>
           <Link
             href="/tags/Robotics"
-            className="text-sm font-medium transition-colors hover:text-primary"
+            className="font-euclid text-[15px] font-medium text-eudia-text transition-colors hover:text-eudia-primary"
           >
             Robotics
           </Link>
           <Link
             href="/platform/luma"
-            className="text-sm font-medium transition-colors hover:text-primary"
+            className="font-euclid text-[15px] font-medium text-eudia-text transition-colors hover:text-eudia-primary"
           >
             Platforms
           </Link>
-          <div className="ml-2 h-6 w-px bg-border" />
+          <div className="ml-2 h-6 w-px bg-gray-300" />
           <a
             href="https://eudia.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm font-medium text-primary transition-colors hover:text-primary/80"
+            className="font-euclid text-[15px] font-medium text-eudia-primary transition-colors hover:text-eudia-primary-dark"
           >
             Eudia.com
           </a>
