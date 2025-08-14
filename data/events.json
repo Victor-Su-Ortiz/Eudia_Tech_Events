@@ -1,0 +1,175 @@
+[
+  {
+    "id": "evt_1735680000_abc123",
+    "slug": "ai-agents-hackathon-2025",
+    "title": "AI Agents Hackathon 2025",
+    "source": "luma",
+    "eventUrl": "https://lu.ma/ai-agents-hackathon-2025",
+    "start": "2025-02-15T09:00:00-08:00",
+    "end": "2025-02-16T18:00:00-08:00",
+    "timezone": "America/Los_Angeles",
+    "venue": {
+      "name": "GitHub HQ",
+      "address": "88 Colin P Kelly Jr St",
+      "city": "San Francisco, CA",
+      "lat": 37.7825,
+      "lng": -122.3912
+    },
+    "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995",
+    "price": "Free",
+    "rsvpRequired": true,
+    "organizer": {
+      "name": "SF AI Community",
+      "url": "https://sfai.community"
+    },
+    "tags": ["AI", "Agents", "Hackathon", "LLM", "Machine Learning"],
+    "summary": "Join 200+ developers for a weekend of building cutting-edge AI agents. Compete for $50k in prizes while learning from industry experts.",
+    "descriptionMd": "## About the Event\n\nThe AI Agents Hackathon 2025 brings together the brightest minds in artificial intelligence to build the next generation of autonomous agents.\n\n### What to Expect\n\n- **48 hours** of intensive coding and collaboration\n- **Expert mentors** from OpenAI, Anthropic, and Google DeepMind\n- **$50,000** in total prizes\n- **Networking** with 200+ AI developers and researchers\n- **Free meals** and unlimited coffee\n\n### Schedule\n\n**Day 1 - Saturday**\n- 9:00 AM - Registration & Breakfast\n- 10:00 AM - Opening Ceremony\n- 11:00 AM - Hacking Begins\n- 1:00 PM - Lunch\n- 3:00 PM - Workshop: Building with GPT-4\n- 6:00 PM - Dinner\n- 8:00 PM - Lightning Talks\n\n**Day 2 - Sunday**\n- 9:00 AM - Breakfast\n- 12:00 PM - Hacking Ends\n- 1:00 PM - Lunch & Demos\n- 3:00 PM - Judging\n- 5:00 PM - Awards Ceremony\n- 6:00 PM - Closing Reception\n\n### Who Should Attend\n\nThis event is perfect for:\n- Software engineers interested in AI\n- Machine learning researchers\n- Product managers working on AI products\n- Students studying computer science or related fields\n- Anyone passionate about the future of AI",
+    "createdAt": "2024-12-01T10:00:00Z",
+    "updatedAt": "2024-12-01T10:00:00Z"
+  },
+  {
+    "id": "evt_1735680001_def456",
+    "slug": "robotics-summit-bay-area-2025",
+    "title": "Robotics Summit Bay Area 2025",
+    "source": "eventbrite",
+    "eventUrl": "https://www.eventbrite.com/e/robotics-summit-bay-area-2025",
+    "start": "2025-03-10T08:30:00-07:00",
+    "end": "2025-03-10T17:00:00-07:00",
+    "timezone": "America/Los_Angeles",
+    "venue": {
+      "name": "San Jose Convention Center",
+      "address": "150 W San Carlos St",
+      "city": "San Jose, CA",
+      "lat": 37.3299,
+      "lng": -121.8890
+    },
+    "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e",
+    "price": "$299",
+    "rsvpRequired": true,
+    "organizer": {
+      "name": "Bay Area Robotics Association",
+      "url": "https://bayarearobotics.org"
+    },
+    "tags": ["Robotics", "Hardware", "AI", "Automation", "Manufacturing"],
+    "summary": "The premier robotics conference in Silicon Valley featuring demos, talks, and networking with 500+ robotics professionals.",
+    "descriptionMd": "## Welcome to Robotics Summit Bay Area 2025\n\nJoin us for the most comprehensive robotics event in the Bay Area, bringing together industry leaders, researchers, and innovators.\n\n### Conference Highlights\n\n- **20+ Speakers** from Tesla, Boston Dynamics, and more\n- **Live Demonstrations** of cutting-edge robotic systems\n- **Exhibition Hall** with 50+ robotics companies\n- **Hands-on Workshops** on ROS2, computer vision, and control systems\n- **Networking Reception** with industry leaders\n\n### Featured Speakers\n\n- **Dr. Sarah Chen** - VP of Robotics, Tesla\n- **Prof. John Martinez** - Stanford Robotics Lab\n- **Lisa Wong** - CTO, Cruise Automation\n- **Michael Brown** - Director of Engineering, Boston Dynamics\n\n### Topics Covered\n\n- Autonomous Navigation\n- Computer Vision for Robotics\n- Human-Robot Interaction\n- Industrial Automation\n- Medical Robotics\n- Agricultural Robotics\n- Soft Robotics\n- Swarm Intelligence\n\n### Ticket Information\n\n- **Early Bird**: $199 (until Jan 31)\n- **Regular**: $299\n- **Student**: $99 (with valid ID)\n- **Group (5+)**: $249 per person\n\nTicket includes access to all sessions, exhibition hall, workshops, meals, and networking reception.",
+    "createdAt": "2024-12-02T10:00:00Z",
+    "updatedAt": "2024-12-02T10:00:00Z"
+  },
+  {
+    "id": "evt_1735680002_ghi789",
+    "slug": "biotech-breakthrough-conference-2025",
+    "title": "BioTech Breakthrough Conference 2025",
+    "source": "luma",
+    "eventUrl": "https://lu.ma/biotech-breakthrough-2025",
+    "start": "2025-04-22T09:00:00-07:00",
+    "end": "2025-04-23T17:00:00-07:00",
+    "timezone": "America/Los_Angeles",
+    "venue": {
+      "name": "Genentech Hall",
+      "address": "600 16th Street",
+      "city": "San Francisco, CA",
+      "lat": 37.7677,
+      "lng": -122.3962
+    },
+    "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56",
+    "price": "$599",
+    "rsvpRequired": true,
+    "organizer": {
+      "name": "BioTech Innovation Network",
+      "url": "https://biotechinnovation.net"
+    },
+    "tags": ["BioTech", "Healthcare", "AI", "Genomics", "Drug Discovery"],
+    "summary": "Two-day conference exploring the intersection of biotechnology, AI, and healthcare innovation with 1000+ attendees.",
+    "descriptionMd": "## BioTech Breakthrough Conference 2025\n\nDiscover the future of biotechnology at the Bay Area's premier life sciences event.\n\n### Conference Overview\n\nThis two-day conference brings together biotech leaders, researchers, investors, and innovators to discuss the latest breakthroughs and future directions in biotechnology.\n\n### Key Themes\n\n#### AI in Drug Discovery\n- Machine learning for molecular design\n- Protein structure prediction\n- Clinical trial optimization\n\n#### Gene Therapy & CRISPR\n- Latest CRISPR applications\n- Gene therapy success stories\n- Regulatory landscape\n\n#### Personalized Medicine\n- Genomic sequencing advances\n- Biomarker discovery\n- Precision oncology\n\n#### Synthetic Biology\n- Engineered biological systems\n- Biomanufacturing\n- Sustainable biotech solutions\n\n### Program Highlights\n\n**Day 1 - April 22**\n- Keynote: The Future of Medicine\n- Panel: AI-Driven Drug Discovery\n- Workshop: CRISPR Techniques\n- Startup Pitch Competition\n- Networking Reception\n\n**Day 2 - April 23**\n- Keynote: Synthetic Biology Revolution\n- Panel: Investing in BioTech\n- Workshop: Regulatory Compliance\n- Awards Ceremony\n- Closing Remarks\n\n### Who Should Attend\n\n- Biotech executives and researchers\n- Healthcare professionals\n- Venture capitalists and investors\n- Regulatory affairs professionals\n- Graduate students and postdocs",
+    "createdAt": "2024-12-03T10:00:00Z",
+    "updatedAt": "2024-12-03T10:00:00Z"
+  },
+  {
+    "id": "evt_1735680003_jkl012",
+    "slug": "cloud-native-computing-meetup-january",
+    "title": "Cloud Native Computing Meetup - January Edition",
+    "source": "meetup",
+    "eventUrl": "https://www.meetup.com/cloud-native-bay-area/events/298765432",
+    "start": "2025-01-28T18:30:00-08:00",
+    "end": "2025-01-28T21:00:00-08:00",
+    "timezone": "America/Los_Angeles",
+    "venue": {
+      "name": "Google Cloud Office",
+      "address": "345 Spear Street",
+      "city": "San Francisco, CA",
+      "lat": 37.7899,
+      "lng": -122.3901
+    },
+    "price": "Free",
+    "rsvpRequired": true,
+    "organizer": {
+      "name": "Cloud Native Bay Area",
+      "url": "https://cloudnativebayarea.org"
+    },
+    "tags": ["Cloud", "Kubernetes", "DevOps", "Infrastructure", "Security"],
+    "summary": "Monthly meetup for cloud native enthusiasts featuring talks on Kubernetes, service mesh, and cloud security best practices.",
+    "descriptionMd": "## Cloud Native Computing Meetup\n\nJoin us for our January meetup focused on cloud native technologies and best practices.\n\n### Agenda\n\n**6:30 PM - 7:00 PM**: Registration & Networking\n- Light refreshments provided\n- Connect with fellow cloud engineers\n\n**7:00 PM - 7:30 PM**: Talk 1 - Kubernetes Security Best Practices\n- Speaker: Alex Kim, Staff Engineer at Uber\n- Learn about securing your K8s clusters\n- Pod security policies and RBAC\n\n**7:30 PM - 8:00 PM**: Talk 2 - Service Mesh Deep Dive\n- Speaker: Maria Garcia, Principal Engineer at Lyft\n- Istio vs. Linkerd comparison\n- Real-world implementation stories\n\n**8:00 PM - 8:30 PM**: Talk 3 - Cost Optimization in the Cloud\n- Speaker: David Lee, FinOps Lead at Airbnb\n- Strategies for reducing cloud spend\n- Tools and automation\n\n**8:30 PM - 9:00 PM**: Q&A and Networking\n\n### What to Bring\n\n- Your laptop if you want to follow along\n- Questions for our speakers\n- Business cards for networking\n\n### COVID-19 Safety\n\nWe follow all local health guidelines. Masks are optional but welcome.",
+    "createdAt": "2024-12-04T10:00:00Z",
+    "updatedAt": "2024-12-04T10:00:00Z"
+  },
+  {
+    "id": "evt_1735680004_mno345",
+    "slug": "cybersecurity-summit-silicon-valley",
+    "title": "Cybersecurity Summit Silicon Valley",
+    "source": "eventbrite",
+    "eventUrl": "https://www.eventbrite.com/e/cybersecurity-summit-silicon-valley",
+    "start": "2025-05-14T08:00:00-07:00",
+    "end": "2025-05-14T18:00:00-07:00",
+    "timezone": "America/Los_Angeles",
+    "venue": {
+      "name": "Computer History Museum",
+      "address": "1401 N Shoreline Blvd",
+      "city": "Mountain View, CA",
+      "lat": 37.4143,
+      "lng": -122.0775
+    },
+    "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b",
+    "price": "$399",
+    "rsvpRequired": true,
+    "organizer": {
+      "name": "InfoSec Bay Area",
+      "url": "https://infosecbayarea.com"
+    },
+    "tags": ["Security", "Cloud", "AI", "Privacy", "Compliance"],
+    "summary": "Premier cybersecurity conference covering zero-trust, cloud security, AI threats, and compliance with 800+ security professionals.",
+    "descriptionMd": "## Cybersecurity Summit Silicon Valley\n\nThe definitive cybersecurity event for technology leaders and security professionals.\n\n### Conference Tracks\n\n#### Track 1: Zero Trust Architecture\n- Implementing zero trust in practice\n- Identity and access management\n- Microsegmentation strategies\n\n#### Track 2: AI & Security\n- AI-powered threat detection\n- Defending against AI attacks\n- LLM security considerations\n\n#### Track 3: Cloud Security\n- Multi-cloud security strategies\n- Container and Kubernetes security\n- Serverless security patterns\n\n#### Track 4: Compliance & Privacy\n- GDPR, CCPA, and beyond\n- Security compliance automation\n- Privacy engineering practices\n\n### Featured Sessions\n\n- **Keynote**: The Evolution of Cyber Threats in 2025\n- **Panel**: CISO Perspectives on Modern Security\n- **Workshop**: Incident Response Simulation\n- **Fireside Chat**: Security in the Age of AI\n\n### Speakers Include\n\n- CISOs from Fortune 500 companies\n- Security researchers from top universities\n- Founders of security startups\n- Government cybersecurity officials\n\n### What's Included\n\n- Access to all conference sessions\n- Exhibition hall with 100+ vendors\n- Breakfast, lunch, and refreshments\n- Conference mobile app\n- Certificate of attendance\n- Recording access for 30 days post-event",
+    "createdAt": "2024-12-05T10:00:00Z",
+    "updatedAt": "2024-12-05T10:00:00Z"
+  },
+  {
+    "id": "evt_1735680005_pqr678",
+    "slug": "women-in-tech-leadership-summit-2025",
+    "title": "Women in Tech Leadership Summit 2025",
+    "source": "custom",
+    "eventUrl": "https://womenintechsummit.com/bayarea2025",
+    "start": "2025-03-08T09:00:00-08:00",
+    "end": "2025-03-08T17:30:00-08:00",
+    "timezone": "America/Los_Angeles",
+    "venue": {
+      "name": "Salesforce Tower",
+      "address": "415 Mission Street",
+      "city": "San Francisco, CA",
+      "lat": 37.7905,
+      "lng": -122.3974
+    },
+    "image": "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6",
+    "price": "$199",
+    "rsvpRequired": true,
+    "organizer": {
+      "name": "Women in Tech Network",
+      "url": "https://womenintechnetwork.org"
+    },
+    "tags": ["Leadership", "Diversity", "Career", "Networking", "Mentorship"],
+    "summary": "Empowering women in technology through leadership development, mentorship, and networking with 500+ attendees.",
+    "descriptionMd": "## Women in Tech Leadership Summit 2025\n\nCelebrating International Women's Day with a powerful gathering of women leaders in technology.\n\n### Summit Objectives\n\n- **Inspire** the next generation of women tech leaders\n- **Connect** women across all levels and disciplines\n- **Develop** leadership and technical skills\n- **Address** challenges facing women in tech\n- **Celebrate** achievements and successes\n\n### Program Highlights\n\n#### Morning Sessions (9:00 AM - 12:30 PM)\n\n- **Opening Keynote**: Breaking Barriers in Tech Leadership\n- **Panel**: From IC to Executive - Career Journeys\n- **Workshop**: Negotiation Skills for Tech Professionals\n- **Fireside Chat**: Building Inclusive Tech Teams\n\n#### Afternoon Sessions (1:30 PM - 5:30 PM)\n\n- **Technical Track**: AI/ML, Cloud Architecture, Security\n- **Leadership Track**: Executive Presence, Team Building\n- **Entrepreneurship Track**: Founding and Funding\n- **Career Development Track**: Personal Branding, Mentorship\n\n### Special Features\n\n- **Mentorship Matching**: Connect with senior leaders\n- **Resume Reviews**: 1-on-1 sessions with recruiters\n- **Headshot Station**: Professional photos\n- **Networking App**: Connect before, during, and after\n- **Sponsor Expo**: Meet companies committed to diversity\n\n### Who Should Attend\n\n- Women in technical roles\n- Women in tech leadership\n- Allies supporting women in tech\n- Students entering the tech industry\n- Anyone passionate about diversity in tech\n\n### Scholarship Program\n\nLimited scholarships available for students and those facing financial hardship. Apply on our website.",
+    "createdAt": "2024-12-06T10:00:00Z",
+    "updatedAt": "2024-12-06T10:00:00Z"
+  }
+]

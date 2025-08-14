@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# Validate events.json
+npm run validate
+
+# Run type checking
+npm run typecheck
+
+# Run linting
+npm run lint
