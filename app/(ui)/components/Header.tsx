@@ -28,7 +28,18 @@ export function Header() {
     >
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-3">
-          {/* Eudia Logo/Icon */}
+          {/* Option 1: Use Eudia PNG logo when available */}
+          {/* Uncomment this when you add eudia-logo.png to public/images/ */}
+          {/* <Image
+            src="/images/eudia-logo.png"
+            alt="Eudia"
+            width={40}
+            height={40}
+            className="rounded-lg"
+            priority
+          /> */}
+
+          {/* Option 2: Current gradient icon (remove when using PNG) */}
           <div className="relative flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-primary via-primary/80 to-primary/60 shadow-lg">
             <Sparkles className="h-6 w-6 text-white" />
             <div className="absolute inset-0 rounded-lg bg-white/20" />
