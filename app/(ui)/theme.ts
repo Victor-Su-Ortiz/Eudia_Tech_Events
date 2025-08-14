@@ -1,8 +1,18 @@
 export const theme = {
   colors: {
+    // Eudia brand colors - professional, trustworthy, clear
     brand: {
-      DEFAULT: '220 86% 56%', // Eudia blue
+      DEFAULT: '221 83% 53%', // Professional blue (#2563eb)
+      light: '217 91% 60%', // Lighter blue
+      dark: '224 76% 48%', // Darker blue
       foreground: '0 0% 100%',
+    },
+    // Accent colors for categories
+    accent: {
+      purple: '271 81% 56%', // For AI/ML events
+      green: '142 71% 45%', // For sustainability/biotech
+      orange: '25 95% 53%', // For community events
+      pink: '330 81% 60%', // For special events
     },
     background: {
       light: '0 0% 100%',
@@ -17,29 +27,26 @@ export const theme = {
       dark: '222 47% 13%',
     },
     muted: {
-      light: '210 40% 96%',
-      dark: '217 33% 17%',
-    },
-    accent: {
-      light: '210 40% 96%',
+      light: '210 40% 96.1%',
       dark: '217 33% 17%',
     },
     primary: {
-      DEFAULT: '220 86% 56%',
+      DEFAULT: '221 83% 53%',
       foreground: '0 0% 100%',
     },
     secondary: {
-      light: '210 40% 96%',
+      light: '210 40% 96.1%',
       dark: '217 33% 17%',
     },
     border: {
-      light: '214 32% 91%',
+      light: '214.3 31.8% 91.4%',
       dark: '217 33% 17%',
     },
   },
   fonts: {
+    // Clean, modern font stack prioritizing readability
     sans: [
-      'system-ui',
+      'Inter',
       '-apple-system',
       'BlinkMacSystemFont',
       '"Segoe UI"',
@@ -86,5 +93,11 @@ export const theme = {
     lg: '2rem',
     xl: '3rem',
     '2xl': '4rem',
+  },
+  // Eudia design principles
+  principles: {
+    efficiency: 'Fast loading, intuitive navigation, minimal clicks',
+    clarity: 'Clear typography, organized layout, accessible content',
+    trust: 'Consistent design, accurate information, transparent sources',
   },
 } as const

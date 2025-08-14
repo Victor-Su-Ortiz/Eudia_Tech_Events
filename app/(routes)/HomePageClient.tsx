@@ -47,14 +47,22 @@ export function HomePageClient({
   return (
     <main id="main-content" className="flex-1">
       <div className="container py-8">
-        {/* Hero Section */}
-        <div className="mb-8 text-center">
-          <h1 className="mb-4 text-4xl font-bold tracking-tight sm:text-5xl">
-            Bay Area Tech Events
+        {/* Hero Section with Eudia Branding */}
+        <div className="mb-12 text-center">
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2">
+            <span className="text-sm font-medium text-primary">Curated by Eudia</span>
+            <span className="text-xs text-muted-foreground">•</span>
+            <span className="text-xs text-muted-foreground">Efficiency. Clarity. Trust.</span>
+          </div>
+
+          <h1 className="mb-4 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
+            <span className="gradient-eudia">Bay Area</span> <span>Tech Events</span>
           </h1>
-          <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
+
+          <p className="mx-auto max-w-2xl text-lg leading-relaxed text-muted-foreground">
             Discover the most exciting tech events happening around the Bay Area. From AI and
-            robotics to biotech and cloud computing.
+            robotics to biotech and cloud computing — all curated with Eudia&apos;s commitment to
+            quality and innovation.
           </p>
         </div>
 

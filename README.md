@@ -1,8 +1,9 @@
-# Bay Area Tech Events
+# Bay Area Tech Events by Eudia
 
-A modern, performant web application for discovering and tracking tech events in the Bay Area. Built with Next.js 14 (App Router), TypeScript, Tailwind CSS, and deployed on Vercel.
+A modern, performant web application for discovering and tracking tech events in the Bay Area. Built by **[Eudia](https://eudia.com)** with principles of efficiency, clarity, and trust. Powered by Next.js 14 (App Router), TypeScript, Tailwind CSS, and deployed on Vercel.
 
 🌐 **Live Demo**: [events.eudia.com](https://events.eudia.com)
+🏢 **Built by**: [Eudia - Human-Centered Technology](https://eudia.com)
 
 ## Features
 
@@ -35,28 +36,32 @@ A modern, performant web application for discovering and tracking tech events in
 
 ### Prerequisites
 
-- Node.js 18+ 
+- Node.js 18+
 - pnpm (recommended) or npm/yarn
 
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/eudia/bay-area-tech-events.git
 cd bay-area-tech-events
 ```
 
 2. Install dependencies:
+
 ```bash
 pnpm install
 ```
 
 3. Create environment file:
+
 ```bash
 cp .env.example .env.local
 ```
 
 4. Run development server:
+
 ```bash
 pnpm dev
 ```
@@ -105,6 +110,7 @@ Events are stored in `data/events.json` with the following schema:
 ### CLI Scripts
 
 #### Add Event
+
 ```bash
 pnpm add-event \
   --url "https://lu.ma/event" \
@@ -119,6 +125,7 @@ pnpm add-event \
 ```
 
 #### Edit Event
+
 ```bash
 pnpm edit-event \
   --slug "ai-summit-2025" \
@@ -127,17 +134,20 @@ pnpm edit-event \
 ```
 
 #### Import CSV
+
 ```bash
 pnpm import-csv --file events.csv
 ```
 
 CSV format:
+
 ```csv
 title,url,start,tags,summary
 "Event Title","https://event.url","2025-01-01T10:00:00-08:00","AI,Cloud","Event summary"
 ```
 
 #### Validate Data
+
 ```bash
 pnpm validate
 ```
@@ -250,30 +260,35 @@ NEXT_PUBLIC_VERCEL_ANALYTICS_ID=your_analytics_id
 ### Public Endpoints
 
 #### Health Check
+
 ```
 GET /api/healthz
 Response: { ok: true }
 ```
 
 #### Calendar File
+
 ```
 GET /api/ics/[slug]
 Response: text/calendar file
 ```
 
 #### OG Image
+
 ```
 GET /api/og?slug=[slug]
 Response: PNG image (1200x630)
 ```
 
 #### Sitemap
+
 ```
 GET /sitemap.xml
 Response: XML sitemap
 ```
 
 #### Robots
+
 ```
 GET /robots.txt
 Response: Robots.txt file
@@ -309,9 +324,26 @@ Response: Robots.txt file
 
 MIT License - see [LICENSE](LICENSE) file for details
 
+## About Eudia
+
+**[Eudia](https://eudia.com)** is committed to building technology with human-centered design principles. We focus on three core values:
+
+- **🚀 Efficiency**: Fast, intuitive, and streamlined experiences
+- **💡 Clarity**: Clear communication and transparent design
+- **🤝 Trust**: Reliable, secure, and honest technology
+
+This Bay Area Tech Events platform embodies these principles by providing:
+
+- Fast, server-side rendered pages for optimal performance
+- Clear, accessible design with WCAG AA compliance
+- Transparent event sourcing with platform attribution
+- Reliable data validation and error handling
+
 ## Credits
 
-Built with ❤️ by [Eudia](https://eudia.com) - Focused on human-centered efficiency, clarity, and trust.
+Built with ❤️ by **[Eudia](https://eudia.com)** - Human-Centered Technology for the Modern World.
+
+Visit us at [eudia.com](https://eudia.com) to learn more about our products and services.
 
 ### Technologies Used
 
@@ -323,6 +355,7 @@ Built with ❤️ by [Eudia](https://eudia.com) - Focused on human-centered effi
 ## Support
 
 For issues, questions, or suggestions:
+
 - Open an [issue](https://github.com/eudia/bay-area-tech-events/issues)
 - Contact: events@eudia.com
 - Twitter: [@eudia](https://twitter.com/eudia)

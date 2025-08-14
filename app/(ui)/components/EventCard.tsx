@@ -21,7 +21,7 @@ interface EventCardProps {
 
 export function EventCard({ event }: EventCardProps) {
   return (
-    <Card className="flex h-full flex-col overflow-hidden transition-all hover:shadow-lg">
+    <Card className="group flex h-full flex-col overflow-hidden border-border/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
       {event.image && (
         <div className="relative h-48 w-full overflow-hidden bg-muted">
           <img src={event.image} alt={event.title} className="h-full w-full object-cover" />

@@ -5,12 +5,13 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: {
-    default: 'Bay Area Tech Events | Eudia',
-    template: '%s | Bay Area Tech Events',
+    default: 'Bay Area Tech Events | Powered by Eudia',
+    template: '%s | Bay Area Tech Events by Eudia',
   },
   description:
-    'Discover the most exciting tech events happening around the Bay Area. From AI and robotics to biotech and cloud computing.',
+    'Discover the most exciting tech events in the Bay Area, curated by Eudia with principles of efficiency, clarity, and trust. From AI and robotics to biotech and cloud computing.',
   keywords: [
+    'Eudia',
     'tech events',
     'bay area',
     'silicon valley',
@@ -20,8 +21,12 @@ export const metadata: Metadata = {
     'cloud',
     'meetups',
     'conferences',
+    'human-centered design',
+    'efficiency',
+    'clarity',
+    'trust',
   ],
-  authors: [{ name: 'Eudia' }],
+  authors: [{ name: 'Eudia', url: 'https://eudia.com' }],
   creator: 'Eudia',
   publisher: 'Eudia',
   formatDetection: {
