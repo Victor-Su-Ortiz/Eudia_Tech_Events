@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import { Sparkles } from 'lucide-react'
 
@@ -9,25 +8,9 @@ interface EudiaLogoProps {
 }
 
 export function EudiaLogo({ showText = true, size = 'md', linkToHome = true }: EudiaLogoProps) {
-  const sizes = {
-    sm: { logo: 32, icon: 20 },
-    md: { logo: 40, icon: 24 },
-    lg: { logo: 48, icon: 32 },
-  }
-
   const logoContent = (
     <div className="flex items-center gap-3">
-      {/* Use this if you have the Eudia PNG logo */}
-      {/* <Image
-        src="/images/eudia-logo.png"
-        alt="Eudia"
-        width={sizes[size].logo}
-        height={sizes[size].logo}
-        className="rounded-lg"
-        priority
-      /> */}
-
-      {/* Fallback to gradient icon if no PNG available */}
+      {/* Gradient icon with Eudia branding */}
       <div
         className={`relative flex items-center justify-center rounded-lg bg-gradient-to-br from-primary via-primary/80 to-primary/60 shadow-lg ${
           size === 'sm' ? 'h-8 w-8' : size === 'md' ? 'h-10 w-10' : 'h-12 w-12'
