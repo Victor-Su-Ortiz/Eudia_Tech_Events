@@ -1,4 +1,7 @@
 {
+  "buildCommand": "pnpm build",
+  "installCommand": "pnpm install",
+  "framework": "nextjs",
   "functions": {
     "app/api/og/route.tsx": {
       "maxDuration": 10
