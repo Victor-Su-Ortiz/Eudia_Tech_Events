@@ -10,6 +10,7 @@ import {
   formatEventDateShort,
   formatRelativeDate,
   getPlatformColor,
+  getPlatformColorForImage,
   getPlatformDisplayName,
   getTagColor,
   formatPrice,
@@ -26,7 +27,7 @@ export function EventCard({ event }: EventCardProps) {
         <div className="relative h-48 w-full overflow-hidden bg-muted">
           <img src={event.image} alt={event.title} className="h-full w-full object-cover" />
           <Badge
-            className={`absolute right-2 top-2 ${getPlatformColor(event.source)}`}
+            className={`absolute right-2 top-2 shadow-lg ring-1 ring-black/5 backdrop-blur-md ${getPlatformColorForImage(event.source)}`}
             variant="secondary"
           >
             {getPlatformDisplayName(event.source)}

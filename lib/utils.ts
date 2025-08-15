@@ -67,6 +67,16 @@ export function getPlatformColor(source: string): string {
   return colors[source] || colors.custom
 }
 
+export function getPlatformColorForImage(source: string): string {
+  const colors: Record<string, string> = {
+    luma: 'bg-purple-600/90 text-white dark:bg-purple-700/90 dark:text-white',
+    eventbrite: 'bg-orange-600/90 text-white dark:bg-orange-700/90 dark:text-white',
+    meetup: 'bg-red-600/90 text-white dark:bg-red-700/90 dark:text-white',
+    custom: 'bg-gray-600/90 text-white dark:bg-gray-700/90 dark:text-white',
+  }
+  return colors[source] || colors.custom
+}
+
 export function getTagColor(index: number): string {
   const colors = [
     'bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300',
