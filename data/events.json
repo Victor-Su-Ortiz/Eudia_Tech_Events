@@ -1,5 +1,46 @@
 [
   {
+    "id": "evt_aiconference2025_001",
+    "slug": "the-ai-conference-2025",
+    "title": "The AI Conference 2025",
+    "source": "custom",
+    "eventUrl": "https://aiconference.com/",
+    "start": "2025-09-17T07:30:00-07:00",
+    "end": "2025-09-18T18:00:00-07:00",
+    "timezone": "America/Los_Angeles",
+    "venue": {
+      "name": "Pier 48 | Mission Rock",
+      "address": "Pier 48",
+      "city": "San Francisco, CA 94158",
+      "lat": 37.7707,
+      "lng": -122.3859
+    },
+    "image": "https://images.unsplash.com/photo-1591115765373-5207764f72e7",
+    "price": "Paid - Early Bird Available",
+    "rsvpRequired": true,
+    "organizer": {
+      "name": "The AI Conference",
+      "url": "https://aiconference.com/"
+    },
+    "tags": [
+      "AI",
+      "Conference",
+      "AGI",
+      "LLMs",
+      "Machine Learning",
+      "Neural Networks",
+      "Foundation Models",
+      "Generative AI",
+      "AI Infrastructure",
+      "Multi-Day",
+      "Networking"
+    ],
+    "summary": "The AI Conference brings together the brightest minds in AI for 2 days of sessions on AGI, Foundation Models, Neural Architectures, AI Infrastructure, and real-world applications. Features 100+ speakers across 4 tracks with industry leaders from Google DeepMind, Meta, AMD, Berkeley, and more.",
+    "descriptionMd": "## The AI Conference 2025: Shaping the Future of AI\n\n**September 17-18, 2025 | Pier 48, Mission Rock, San Francisco**\n\nThe AI Conference is a groundbreaking vendor-neutral event brought to you by the creators of **MLconf** and **Ben Lorica**, former Program Chair of The O'Reilly Artificial Intelligence Conference.\n\n### Event Overview\n\n**2 DAYS | 4 TRACKS | 100+ SPEAKERS**\n\nJoin the most comprehensive AI event of 2025, featuring world-renowned AI specialists, revolutionary ideas, transformative use cases, and groundbreaking research. Whether you're a researcher, engineer, entrepreneur, or executive, you'll find opportunities to learn, collaborate, and network with some of the brightest minds in AI.\n\n### Featured Speakers\n\nThe conference brings together an exceptional lineup of AI leaders:\n\n- **Dr. Rodney Brooks** - Co-Founder & CTO, Robust.AI\n- **Lin Qiao** - CEO and Co-Founder, Fireworks AI\n- **Ion Stoica** - Professor Berkeley | EECS\n- **Tris Warkentin** - Director of Product Management, Google DeepMind\n- **Dr. Sharon Zhou** - Corporate VP of AI, AMD\n- **Jure Leskovec** - Chief Scientist, Kumo AI\n- **Jai Malkani** - Global Head of AI & Product, Uber\n- **Marc Tessier-Lavigne** - Co-founder, Chairman & CEO, Xaira\n- And 90+ more industry pioneers\n\n### Conference Tracks\n\n#### 1. AI Research & Development\nDive into the future of AI with cutting-edge research presentations on:\n- AGI fundamentals and breakthroughs\n- Multimodal models and visual reasoning\n- Foundational models and fine-tuning strategies\n- Neural architectures and model compression\n- Open-source AI development\n\n#### 2. AI Engineering & Infrastructure\nPractical sessions for builders and engineers:\n- Building high-performance AI data pipelines\n- Vector databases and embeddings\n- Scalable inference and optimization\n- MLOps best practices\n- AI agents and autonomous systems\n\n#### 3. AI Strategy & Leadership\nInsights for executives and decision-makers:\n- Enterprise AI adoption strategies\n- AI governance and compliance\n- Investment trends and market outlook\n- Building AI-first organizations\n- The future of AI's impact on business and society\n\n#### 4. Applied AI\nReal-world AI applications across industries:\n- **Healthcare & Biotech**: Drug discovery, patient care, diagnostics\n- **Retail**: Supply chain optimization, personalization, demand forecasting\n- **Finance**: Risk assessment, fraud detection, algorithmic trading\n- **Wearables & Edge AI**: Ambient devices, real-time processing\n- **Responsible AI**: Ethics, transparency, and fairness\n\n### Featured Panels\n\n**AI at the Edge: Wearables, Glasses & Ambient Devices**\nExplore how AI is moving beyond smartphones to wearables and ambient computing with leaders from Meta and Google.\n\n**AI in Healthcare and Biotech**\nExperts from Xaira, Pfizer, and Menlo Ventures discuss AI's transformation of drug discovery and patient care.\n\n**AI in Retail**\nLeaders from Amazon, Walmart, and Wayfair share real-world implementations of AI at scale.\n\n### Topics Covered\n\n- **AGI**: Systems with human-like cognitive abilities\n- **Foundation Models & LLMs**: GPT-class models, efficiency, responsible deployment\n- **Generative AI**: Transformers, diffusion models, multimodal generation\n- **Neural Architectures**: Transformer models, self-attention, model compression\n- **AI Infrastructure**: Development tools, deployment platforms, scalability\n- **Ethics & Alignment**: Human values, safety, responsible AI development\n- **AI Startups**: Building, funding, and scaling AI businesses\n- **Emerging Topics**: Vector databases, synthetic data, AI governance\n\n### Schedule\n\n**Wednesday, September 17th**\n- 07:30 AM - Registration & Coffee\n- 09:00 AM - Keynotes\n- 11:30 AM - Track Sessions\n- 12:30 PM - Lunch & Lunch Talks\n- 02:00 PM - Afternoon Sessions\n- 05:00 PM - Closing Reception & Networking\n\n**Thursday, September 18th**\n- 08:00 AM - Registration & Coffee\n- 09:00 AM - Keynotes\n- 11:30 AM - Track Sessions\n- 12:30 PM - Lunch & Lunch Talks\n- 02:00 PM - Afternoon Sessions\n- 05:00 PM - Ice Cream Social\n\n### Why Attend?\n\n- **Stay Ahead**: Learn about the latest AI advancements and emerging technologies\n- **Network**: Connect with AI pioneers, researchers, founders, and investors\n- **Learn**: Gain practical insights from real-world case studies and implementations\n- **Collaborate**: Find partners, talent, and opportunities in the AI ecosystem\n- **Get Inspired**: Draw inspiration from revolutionary ideas and groundbreaking research\n\n### Venue & Location\n\n**Pier 48 | Mission Rock**\nSan Francisco, CA 94158\n\nLocated in the heart of San Francisco's waterfront district, the venue offers stunning views and state-of-the-art facilities for this premier AI gathering.\n\n### Sponsors\n\nThe conference is made possible by support from leading AI companies including AWS, IBM, AI Alliance, Neo4j, and many innovative AI startups and organizations.\n\n### Registration\n\nAll ticket types provide full access to:\n- All sessions and tracks\n- Networking events\n- The Sponsor Pavilion\n- Lunch and refreshments\n- Conference materials\n\n**Note**: Early bird pricing available for a limited time. The conference sells out every year, so secure your spot early!\n\n### Contact\n\nFor more information, visit [aiconference.com](https://aiconference.com/)\n\n---\n\n*Join us for the most comprehensive AI conference of 2025, where the future of artificial intelligence is being shaped by today's brightest minds.*",
+    "createdAt": "2025-01-01T10:00:00Z",
+    "updatedAt": "2025-01-01T10:00:00Z"
+  },
+  {
     "id": "evt_techweek2025_001",
     "slug": "tech-week-2025",
     "title": "Tech Week 2025",
