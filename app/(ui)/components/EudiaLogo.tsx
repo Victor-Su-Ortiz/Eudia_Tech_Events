@@ -2,7 +2,6 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
 
 interface EudiaLogoProps {
@@ -18,7 +17,8 @@ export function EudiaLogo({
   linkToHome = true,
   className = '',
 }: EudiaLogoProps) {
-  const { theme, resolvedTheme } = useTheme()
+  // useTheme hook is imported but not currently used since we're always using the Black logo
+  // const { resolvedTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
@@ -36,7 +36,7 @@ export function EudiaLogo({
 
     // For now, always use Black logo since the app has a white background
     // You can change this logic if you implement proper dark mode with dark backgrounds
-    const isDark = resolvedTheme === 'dark'
+    // Note: resolvedTheme === 'dark' could be used here to switch logos based on theme
     // Inverted: use Black logo on light backgrounds, White logo only on truly dark backgrounds
     const color = 'Black' // Always use Black for visibility on white backgrounds
 
