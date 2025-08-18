@@ -1,7 +1,16 @@
 import fs from 'fs'
 import path from 'path'
 import { Event, eventsSchema } from './schema'
-import { parseISO, isAfter, isBefore, isWithinInterval, startOfDay, endOfDay } from 'date-fns'
+import {
+  parseISO,
+  isAfter,
+  isBefore,
+  isWithinInterval,
+  startOfDay,
+  endOfDay,
+  endOfMonth,
+  endOfWeek,
+} from 'date-fns'
 import Fuse from 'fuse.js'
 
 const EVENTS_FILE = path.join(process.cwd(), 'data', 'events.json')
@@ -223,17 +232,17 @@ export function getRelatedEvents(event: Event, limit: number = 4): Event[] {
 export function getEventStats() {
   const events = readEvents()
   const now = new Date()
-  const weekFromNow = new Date(now.getTime() + 7 * 24 * 60 * 60 * 1000)
-  const monthFromNow = new Date(now.getTime() + 30 * 24 * 60 * 60 * 1000)
+  const endOfCurrentWeek = endOfWeek(now)
+  const endOfCurrentMonth = endOfMonth(now)
 
   const upcoming = events.filter((event) => isAfter(parseISO(event.start), now))
   const thisWeek = events.filter((event) => {
     const eventDate = parseISO(event.start)
-    return isAfter(eventDate, now) && isBefore(eventDate, weekFromNow)
+    return isWithinInterval(eventDate, { start: now, end: endOfCurrentWeek })
   })
   const thisMonth = events.filter((event) => {
     const eventDate = parseISO(event.start)
-    return isAfter(eventDate, now) && isBefore(eventDate, monthFromNow)
+    return isWithinInterval(eventDate, { start: now, end: endOfCurrentMonth })
   })
 
   return {

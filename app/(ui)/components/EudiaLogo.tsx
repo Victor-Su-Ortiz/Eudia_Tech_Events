@@ -1,53 +1,93 @@
+'use client'
+
 import Link from 'next/link'
-import { Sparkles } from 'lucide-react'
+import Image from 'next/image'
+import { useTheme } from 'next-themes'
+import { useEffect, useState } from 'react'
 
 interface EudiaLogoProps {
-  showText?: boolean
+  variant?: 'horizontal' | 'vertical'
   size?: 'sm' | 'md' | 'lg'
   linkToHome?: boolean
+  className?: string
 }
 
-export function EudiaLogo({ showText = true, size = 'md', linkToHome = true }: EudiaLogoProps) {
-  const logoContent = (
-    <div className="flex items-center gap-3">
-      {/* Gradient icon with Eudia branding */}
-      <div
-        className={`relative flex items-center justify-center rounded-lg bg-gradient-to-br from-primary via-primary/80 to-primary/60 shadow-lg ${
-          size === 'sm' ? 'h-8 w-8' : size === 'md' ? 'h-10 w-10' : 'h-12 w-12'
-        }`}
-      >
-        <Sparkles
-          className={`text-white ${
-            size === 'sm' ? 'h-5 w-5' : size === 'md' ? 'h-6 w-6' : 'h-8 w-8'
-          }`}
-        />
-        <div className="absolute inset-0 rounded-lg bg-white/20" />
-      </div>
+export function EudiaLogo({
+  variant = 'horizontal',
+  size = 'md',
+  linkToHome = true,
+  className = '',
+}: EudiaLogoProps) {
+  const { theme, resolvedTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
 
-      {showText && (
-        <div className="flex flex-col">
-          <span
-            className={`font-bold tracking-tight ${
-              size === 'sm' ? 'text-lg' : size === 'md' ? 'text-xl' : 'text-2xl'
-            }`}
-          >
-            Eudia
-          </span>
-          <span
-            className={`text-muted-foreground ${
-              size === 'sm' ? 'text-xs' : size === 'md' ? 'text-xs' : 'text-sm'
-            }`}
-          >
-            Efficiency. Clarity. Trust.
-          </span>
-        </div>
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  // Determine which logo to use based on theme and variant
+  const getLogoPath = () => {
+    const orientation = variant === 'horizontal' ? 'Horizontal' : 'Vertical'
+
+    if (!mounted) {
+      // Return a default logo during SSR
+      return `/images/Eudia-${orientation}-Black.svg`
+    }
+
+    // For now, always use Black logo since the app has a white background
+    // You can change this logic if you implement proper dark mode with dark backgrounds
+    const isDark = resolvedTheme === 'dark'
+    // Inverted: use Black logo on light backgrounds, White logo only on truly dark backgrounds
+    const color = 'Black' // Always use Black for visibility on white backgrounds
+
+    return `/images/Eudia-${orientation}-${color}.svg`
+  }
+
+  // Size configurations
+  const sizeConfig = {
+    sm: {
+      horizontal: { width: 100, height: 30 },
+      vertical: { width: 60, height: 60 },
+    },
+    md: {
+      horizontal: { width: 140, height: 42 },
+      vertical: { width: 80, height: 80 },
+    },
+    lg: {
+      horizontal: { width: 180, height: 54 },
+      vertical: { width: 100, height: 100 },
+    },
+  }
+
+  const dimensions = sizeConfig[size][variant]
+
+  const logoContent = (
+    <div className={`relative ${className}`}>
+      {mounted ? (
+        <Image
+          src={getLogoPath()}
+          alt="Eudia"
+          width={dimensions.width}
+          height={dimensions.height}
+          className="transition-opacity"
+          priority
+        />
+      ) : (
+        // Placeholder during SSR to prevent layout shift
+        <div
+          style={{
+            width: dimensions.width,
+            height: dimensions.height,
+          }}
+          className="animate-pulse rounded bg-gray-200"
+        />
       )}
     </div>
   )
 
   if (linkToHome) {
     return (
-      <Link href="/" className="transition-opacity hover:opacity-90">
+      <Link href="/" className="inline-block transition-opacity hover:opacity-80">
         {logoContent}
       </Link>
     )

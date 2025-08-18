@@ -1,5 +1,6 @@
 import Link from 'next/link'
-import { Sparkles, Github, Twitter, Linkedin, Mail, ExternalLink } from 'lucide-react'
+import { Github, Twitter, Linkedin, Mail, ExternalLink } from 'lucide-react'
+import { EudiaLogo } from './EudiaLogo'
 
 export function Footer() {
   return (
@@ -9,10 +10,7 @@ export function Footer() {
           {/* Eudia Branding */}
           <div className="col-span-2">
             <div className="mb-4 flex items-center gap-3">
-              <div className="relative flex h-10 w-10 items-center justify-center rounded-lg bg-eudia-primary shadow-eudia">
-                <Sparkles className="h-6 w-6 text-white" />
-                <div className="absolute inset-0 rounded-lg bg-white/10" />
-              </div>
+              <EudiaLogo variant="vertical" size="md" linkToHome={false} />
               <div>
                 <h3 className="font-euclid text-lg font-bold text-eudia-text">
                   Bay Area Tech Events

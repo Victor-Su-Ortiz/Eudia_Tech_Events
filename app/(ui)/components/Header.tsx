@@ -1,8 +1,8 @@
 'use client'
 
 import Link from 'next/link'
-import { Sparkles } from 'lucide-react'
 import { ThemeToggle } from './ThemeToggle'
+import { EudiaLogo } from './EudiaLogo'
 import { useState, useEffect } from 'react'
 import { cn } from '@/lib/utils'
 
@@ -27,34 +27,16 @@ export function Header() {
       )}
     >
       <div className="container flex h-16 items-center justify-between px-12">
-        <Link href="/" className="flex items-center gap-3">
-          {/* Option 1: Use Eudia PNG logo when available */}
-          {/* Uncomment this when you add eudia-logo.png to public/images/ */}
-          {/* <Image
-            src="/images/eudia-logo.png"
-            alt="Eudia"
-            width={40}
-            height={40}
-            className="rounded-lg"
-            priority
-          /> */}
-
-          {/* Option 2: Current gradient icon (remove when using PNG) */}
-          <div className="relative flex h-10 w-10 items-center justify-center rounded-lg bg-eudia-primary shadow-lg">
-            <Sparkles className="h-6 w-6 text-white" />
-            <div className="absolute inset-0 rounded-lg bg-white/10" />
-          </div>
+        <div className="flex items-center gap-4">
+          <EudiaLogo variant="horizontal" size="md" linkToHome={true} />
 
           <div className="flex flex-col">
             <span className="font-euclid text-xl font-bold tracking-tight text-eudia-text">
               Bay Area Tech Events
             </span>
-            <span className="text-xs text-eudia-text-muted">
-              Powered by <span className="font-semibold text-eudia-primary">Eudia</span> •
-              Innovation. Intelligence. Impact.
-            </span>
+            <span className="text-xs text-eudia-text-muted">Innovation. Intelligence. Impact.</span>
           </div>
-        </Link>
+        </div>
 
         <nav className="flex items-center gap-6">
           <Link
